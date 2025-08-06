@@ -39,10 +39,42 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 10px;
 }
 
 .controls .btn {
     border: 0;
     background: transparent;
     cursor: pointer;
+}
+
+.controls .fa-play {
+    color: #00ff3c
+}
+
+.controls .fa-stop {
+    color: rgb(255, 0, 0);
+    margin-right: 20px;
+}
+
+.controls .fa-pause {
+    color: #fff;
+}
+
+.controls .timestamp {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+@media(max-width: 800px) {
+    .screen,
+    .controls {
+        width: 90%;
+    }
 }
